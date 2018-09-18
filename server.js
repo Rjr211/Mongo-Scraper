@@ -21,8 +21,8 @@ app.engine('handlebars', exphbs({
 
 app.set('view engine', 'handlebars');
 
-mongoose.connect('mongodb://ds161322.mlab.com:61322/heroku_7kl2fwsc');
-//mongoose.connect('mongodb://localhost/Mongo-Scraper');
+//mongoose.connect('mongodb://ds161322.mlab.com:61322/heroku_7kl2fwsc');
+mongoose.connect('mongodb://localhost/Mongo-Scraper');
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
